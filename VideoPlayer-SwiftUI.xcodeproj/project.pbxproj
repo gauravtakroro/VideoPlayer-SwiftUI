@@ -11,6 +11,7 @@
 		93AB490A2B3C9180003E0CE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB49092B3C9180003E0CE3 /* ContentView.swift */; };
 		93AB490C2B3C9182003E0CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AB490B2B3C9182003E0CE3 /* Assets.xcassets */; };
 		93AB490F2B3C9182003E0CE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AB490E2B3C9182003E0CE3 /* Preview Assets.xcassets */; };
+		93AB49172B3C928D003E0CE3 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AB49162B3C928D003E0CE3 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		93AB49092B3C9180003E0CE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93AB490B2B3C9182003E0CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93AB490E2B3C9182003E0CE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93AB49162B3C928D003E0CE3 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		93AB49182B3C93BC003E0CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AB49172B3C928D003E0CE3 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +41,7 @@
 			children = (
 				93AB49062B3C9180003E0CE3 /* VideoPlayer-SwiftUI */,
 				93AB49052B3C9180003E0CE3 /* Products */,
+				93AB49152B3C928D003E0CE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +56,7 @@
 		93AB49062B3C9180003E0CE3 /* VideoPlayer-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				93AB49182B3C93BC003E0CE3 /* Info.plist */,
 				93AB49072B3C9180003E0CE3 /* VideoPlayer_SwiftUIApp.swift */,
 				93AB49092B3C9180003E0CE3 /* ContentView.swift */,
 				93AB490B2B3C9182003E0CE3 /* Assets.xcassets */,
@@ -65,6 +71,14 @@
 				93AB490E2B3C9182003E0CE3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93AB49152B3C928D003E0CE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93AB49162B3C928D003E0CE3 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +284,7 @@
 				DEVELOPMENT_TEAM = 99485X5JU5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VideoPlayer-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +314,7 @@
 				DEVELOPMENT_TEAM = 99485X5JU5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VideoPlayer-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
