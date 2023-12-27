@@ -44,18 +44,24 @@ struct HomeView: View {
                         }
                         Button {
                             print("VideoFile Video Player Tapped")
+                            homeViewModel.nextVideoViewType = .VideoFileView
+                            homeViewModel.showNextVideoView = true
                         } label: {
                             Text("Launch VideoFile Video Player").bold().underline()
                         }
                         
                         Button {
                             print("VideoUrl Video Player Tapped")
+                            homeViewModel.nextVideoViewType = .VideoUrlView
+                            homeViewModel.showNextVideoView = true
                         } label: {
                             Text("Launch VideoUrl Video Player").bold().underline()
                         }
                         
                         Button {
                             print("YouTubeUrl Video Player Tapped")
+                            homeViewModel.nextVideoViewType = .YoutubeVideoView
+                            homeViewModel.showNextVideoView = true
                         } label: {
                             Text("Launch YouTubeUrl Video Player").bold().underline()
                         }

@@ -6,9 +6,17 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct VideoUrlVideoPlayerView: View {
+    
+    @State var player = AVPlayer(url: URL(string: Constants.videoUrl1)!)
     var body: some View {
-        Text("VideoUrlVideoPlayerView")
+        VStack(spacing: 10) {
+            Text("Video Url Video Player View")
+            VideoPlayer(player: player).frame(width: Constants.videoScreenDimension, height: Constants.videoScreenDimension, alignment: .center)
+        }
     }
+    
+    
 }
