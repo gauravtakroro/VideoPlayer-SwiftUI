@@ -21,6 +21,8 @@ struct HomeView: View {
             return AnyView(YoutubeVideoPlayerView())
         } else if homeViewModel.nextVideoViewType == .VideoFilePlayerWithOverlay {
             return AnyView(VideoFilePlayerViewWithOverlay())
+        } else if homeViewModel.nextVideoViewType == .VideoFilePlayerWithLoop {
+            return AnyView(VideoFilePlayerViewWithLoop())
         } else {
             return AnyView(HomeView())
         }
@@ -53,11 +55,19 @@ struct HomeView: View {
                         }
                         
                         Button {
-                            print("VideoFile Video Player Tapped")
+                            print("VideoFileWithOverlay Video Player Tapped")
                             homeViewModel.nextVideoViewType = .VideoFilePlayerWithOverlay
                             homeViewModel.showNextVideoView = true
                         } label: {
                             Text("Launch VideoFileWithOverlay Video Player").bold().underline()
+                        }
+                        
+                        Button {
+                            print("VideoPlayerWithLoop Video Player Tapped")
+                            homeViewModel.nextVideoViewType = .VideoFilePlayerWithLoop
+                            homeViewModel.showNextVideoView = true
+                        } label: {
+                            Text("Launch VideoPlayerWithLoop Video Player").bold().underline()
                         }
                         
                         Button {

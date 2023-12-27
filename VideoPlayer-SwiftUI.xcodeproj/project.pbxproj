@@ -20,6 +20,7 @@
 		93AB492D2B3CAB3F003E0CE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB492C2B3CAB3F003E0CE3 /* Constants.swift */; };
 		93AB49312B3CB010003E0CE3 /* apple12.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 93AB49302B3CB010003E0CE3 /* apple12.mp4 */; };
 		93AB49342B3CB322003E0CE3 /* VideoFilePlayerViewWithOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB49332B3CB322003E0CE3 /* VideoFilePlayerViewWithOverlay.swift */; };
+		93AB49372B3CB4D7003E0CE3 /* VideoFilePlayerViewWithLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB49362B3CB4D7003E0CE3 /* VideoFilePlayerViewWithLoop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		93AB492C2B3CAB3F003E0CE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		93AB49302B3CB010003E0CE3 /* apple12.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = apple12.mp4; path = ../../../../../../Downloads/Debug/apple12.mp4; sourceTree = "<group>"; };
 		93AB49332B3CB322003E0CE3 /* VideoFilePlayerViewWithOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFilePlayerViewWithOverlay.swift; sourceTree = "<group>"; };
+		93AB49362B3CB4D7003E0CE3 /* VideoFilePlayerViewWithLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFilePlayerViewWithLoop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				93AB491D2B3C9A8F003E0CE3 /* VideoFilePlayerUi */,
+				93AB49322B3CB27C003E0CE3 /* VideoFilePlayerUiWithOverlay */,
+				93AB49352B3CB4AA003E0CE3 /* VideoFIlePlayerUiWithLoop */,
 				93AB491E2B3C9ABA003E0CE3 /* VideoUrlPlayerUi */,
 				93AB491F2B3C9ADD003E0CE3 /* YoutubeVideoPlayerUi */,
-				93AB49322B3CB27C003E0CE3 /* VideoFilePlayerUiWithOverlay */,
 				93AB491A2B3C9A0D003E0CE3 /* HomeUi */,
 			);
 			path = UIs;
@@ -167,6 +170,14 @@
 				93AB49332B3CB322003E0CE3 /* VideoFilePlayerViewWithOverlay.swift */,
 			);
 			path = VideoFilePlayerUiWithOverlay;
+			sourceTree = "<group>";
+		};
+		93AB49352B3CB4AA003E0CE3 /* VideoFIlePlayerUiWithLoop */ = {
+			isa = PBXGroup;
+			children = (
+				93AB49362B3CB4D7003E0CE3 /* VideoFilePlayerViewWithLoop.swift */,
+			);
+			path = VideoFIlePlayerUiWithLoop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,7 @@
 				93AB49342B3CB322003E0CE3 /* VideoFilePlayerViewWithOverlay.swift in Sources */,
 				93AB490A2B3C9180003E0CE3 /* ContentView.swift in Sources */,
 				93AB49082B3C9180003E0CE3 /* VideoPlayer_SwiftUIApp.swift in Sources */,
+				93AB49372B3CB4D7003E0CE3 /* VideoFilePlayerViewWithLoop.swift in Sources */,
 				93AB49252B3C9B70003E0CE3 /* HomeViewModel.swift in Sources */,
 				93AB492B2B3CA31E003E0CE3 /* YoutubeVideoPlayerView.swift in Sources */,
 				93AB49292B3CA309003E0CE3 /* VideoUrlVideoPlayerView.swift in Sources */,

@@ -12,6 +12,7 @@ enum VideoViewType: Int {
     case VideoUrlPlayer = 2
     case YoutubeVideoPlayer = 3
     case VideoFilePlayerWithOverlay = 4
+    case VideoFilePlayerWithLoop = 5
 }
 
 class HomeViewModel: ObservableObject {
