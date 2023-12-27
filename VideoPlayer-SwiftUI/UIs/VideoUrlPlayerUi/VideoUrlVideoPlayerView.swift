@@ -14,7 +14,11 @@ struct VideoUrlVideoPlayerView: View {
     var body: some View {
         VStack(spacing: 10) {
             Text("Video Url Video Player View")
-            VideoPlayer(player: player).frame(width: Constants.videoScreenDimension, height: Constants.videoScreenDimension, alignment: .center)
+            VideoPlayer(player: player).frame(width: Constants.videoScreenDimensionWidth, height: Constants.videoScreenDimensionHeight, alignment: .center)
+        }.onAppear {
+            player.play()
+        }.onDisappear {
+            player.pause()
         }
     }
     

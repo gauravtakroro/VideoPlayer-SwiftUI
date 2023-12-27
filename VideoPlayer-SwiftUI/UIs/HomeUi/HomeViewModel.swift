@@ -8,14 +8,15 @@
 import Foundation
 
 enum VideoViewType: Int {
-    case VideoFileView = 1
-    case VideoUrlView = 2
-    case YoutubeVideoView = 3
+    case VideoFilePlayer = 1
+    case VideoUrlPlayer = 2
+    case YoutubeVideoPlayer = 3
+    case VideoFilePlayerWithOverlay = 4
 }
 
 class HomeViewModel: ObservableObject {
     @Published var showNextVideoView = false
-    var nextVideoViewType: VideoViewType = .VideoFileView
+    var nextVideoViewType: VideoViewType = .VideoFilePlayer
 }
 
 

@@ -13,12 +13,14 @@ struct HomeView: View {
     func buildView() -> some View {
         print("buildView---called")
         // return you destination
-        if homeViewModel.nextVideoViewType == .VideoFileView {
+        if homeViewModel.nextVideoViewType == .VideoFilePlayer {
             return AnyView(VideoFileVideoPlayerView())
-        } else if homeViewModel.nextVideoViewType == .VideoUrlView {
+        } else if homeViewModel.nextVideoViewType == .VideoUrlPlayer {
             return AnyView(VideoUrlVideoPlayerView())
-        } else if homeViewModel.nextVideoViewType == .YoutubeVideoView {
+        } else if homeViewModel.nextVideoViewType == .YoutubeVideoPlayer {
             return AnyView(YoutubeVideoPlayerView())
+        } else if homeViewModel.nextVideoViewType == .VideoFilePlayerWithOverlay {
+            return AnyView(VideoFilePlayerViewWithOverlay())
         } else {
             return AnyView(HomeView())
         }
@@ -44,15 +46,23 @@ struct HomeView: View {
                         }
                         Button {
                             print("VideoFile Video Player Tapped")
-                            homeViewModel.nextVideoViewType = .VideoFileView
+                            homeViewModel.nextVideoViewType = .VideoFilePlayer
                             homeViewModel.showNextVideoView = true
                         } label: {
                             Text("Launch VideoFile Video Player").bold().underline()
                         }
                         
                         Button {
+                            print("VideoFile Video Player Tapped")
+                            homeViewModel.nextVideoViewType = .VideoFilePlayerWithOverlay
+                            homeViewModel.showNextVideoView = true
+                        } label: {
+                            Text("Launch VideoFileWithOverlay Video Player").bold().underline()
+                        }
+                        
+                        Button {
                             print("VideoUrl Video Player Tapped")
-                            homeViewModel.nextVideoViewType = .VideoUrlView
+                            homeViewModel.nextVideoViewType = .VideoUrlPlayer
                             homeViewModel.showNextVideoView = true
                         } label: {
                             Text("Launch VideoUrl Video Player").bold().underline()
@@ -60,7 +70,7 @@ struct HomeView: View {
                         
                         Button {
                             print("YouTubeUrl Video Player Tapped")
-                            homeViewModel.nextVideoViewType = .YoutubeVideoView
+                            homeViewModel.nextVideoViewType = .YoutubeVideoPlayer
                             homeViewModel.showNextVideoView = true
                         } label: {
                             Text("Launch YouTubeUrl Video Player").bold().underline()
