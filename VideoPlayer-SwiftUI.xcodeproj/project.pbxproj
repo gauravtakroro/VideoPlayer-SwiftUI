@@ -12,6 +12,8 @@
 		93AB490C2B3C9182003E0CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AB490B2B3C9182003E0CE3 /* Assets.xcassets */; };
 		93AB490F2B3C9182003E0CE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AB490E2B3C9182003E0CE3 /* Preview Assets.xcassets */; };
 		93AB49172B3C928D003E0CE3 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AB49162B3C928D003E0CE3 /* AVKit.framework */; };
+		93AB49232B3C9B63003E0CE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB49222B3C9B63003E0CE3 /* HomeView.swift */; };
+		93AB49252B3C9B70003E0CE3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB49242B3C9B70003E0CE3 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		93AB490E2B3C9182003E0CE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93AB49162B3C928D003E0CE3 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		93AB49182B3C93BC003E0CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		93AB49222B3C9B63003E0CE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		93AB49242B3C9B70003E0CE3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +89,9 @@
 		93AB49192B3C9A01003E0CE3 /* UIs */ = {
 			isa = PBXGroup;
 			children = (
-				93AB491F2B3C9ADD003E0CE3 /* YoutubeVideoUi */,
-				93AB491E2B3C9ABA003E0CE3 /* VideoUrlUi */,
 				93AB491D2B3C9A8F003E0CE3 /* VideoFileUi */,
+				93AB491E2B3C9ABA003E0CE3 /* VideoUrlUi */,
+				93AB491F2B3C9ADD003E0CE3 /* YoutubeVideoUi */,
 				93AB491A2B3C9A0D003E0CE3 /* HomeUi */,
 			);
 			path = UIs;
@@ -96,6 +100,8 @@
 		93AB491A2B3C9A0D003E0CE3 /* HomeUi */ = {
 			isa = PBXGroup;
 			children = (
+				93AB49222B3C9B63003E0CE3 /* HomeView.swift */,
+				93AB49242B3C9B70003E0CE3 /* HomeViewModel.swift */,
 			);
 			path = HomeUi;
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AB49232B3C9B63003E0CE3 /* HomeView.swift in Sources */,
 				93AB490A2B3C9180003E0CE3 /* ContentView.swift in Sources */,
 				93AB49082B3C9180003E0CE3 /* VideoPlayer_SwiftUIApp.swift in Sources */,
+				93AB49252B3C9B70003E0CE3 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
