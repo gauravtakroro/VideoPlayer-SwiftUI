@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  VideoPlayer-SwiftUI
 //
-//  Created by Roro Solutions LLP on 27/12/23.
+//  Created by Gaurav Tak on 27/12/23.
 //
 
 import SwiftUI
