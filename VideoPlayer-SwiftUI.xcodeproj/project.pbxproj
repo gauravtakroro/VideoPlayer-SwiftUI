@@ -56,10 +56,11 @@
 		93AB49062B3C9180003E0CE3 /* VideoPlayer-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				93AB49182B3C93BC003E0CE3 /* Info.plist */,
+				93AB49192B3C9A01003E0CE3 /* UIs */,
 				93AB49072B3C9180003E0CE3 /* VideoPlayer_SwiftUIApp.swift */,
 				93AB49092B3C9180003E0CE3 /* ContentView.swift */,
 				93AB490B2B3C9182003E0CE3 /* Assets.xcassets */,
+				93AB49182B3C93BC003E0CE3 /* Info.plist */,
 				93AB490D2B3C9182003E0CE3 /* Preview Content */,
 			);
 			path = "VideoPlayer-SwiftUI";
@@ -79,6 +80,45 @@
 				93AB49162B3C928D003E0CE3 /* AVKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93AB49192B3C9A01003E0CE3 /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				93AB491F2B3C9ADD003E0CE3 /* YoutubeVideoUi */,
+				93AB491E2B3C9ABA003E0CE3 /* VideoUrlUi */,
+				93AB491D2B3C9A8F003E0CE3 /* VideoFileUi */,
+				93AB491A2B3C9A0D003E0CE3 /* HomeUi */,
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
+		93AB491A2B3C9A0D003E0CE3 /* HomeUi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeUi;
+			sourceTree = "<group>";
+		};
+		93AB491D2B3C9A8F003E0CE3 /* VideoFileUi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideoFileUi;
+			sourceTree = "<group>";
+		};
+		93AB491E2B3C9ABA003E0CE3 /* VideoUrlUi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideoUrlUi;
+			sourceTree = "<group>";
+		};
+		93AB491F2B3C9ADD003E0CE3 /* YoutubeVideoUi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YoutubeVideoUi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
