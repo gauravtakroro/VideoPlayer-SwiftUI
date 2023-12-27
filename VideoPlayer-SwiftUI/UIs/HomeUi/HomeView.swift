@@ -18,7 +18,8 @@ struct HomeView: View {
         } else if homeViewModel.nextVideoViewType == .VideoUrlPlayer {
             return AnyView(VideoUrlVideoPlayerView())
         } else if homeViewModel.nextVideoViewType == .YoutubeVideoPlayer {
-            return AnyView(YoutubeVideoPlayerView())
+            // video url : https://www.youtube.com/watch?v=3tmHJHUsiCI, so youtubeVideoId is 3tmHJHUsiCI
+            return AnyView(YoutubeVideoPlayerView(youtubeVideoId: "3tmHJHUsiCI"))
         } else if homeViewModel.nextVideoViewType == .VideoFilePlayerWithOverlay {
             return AnyView(VideoFilePlayerViewWithOverlay())
         } else if homeViewModel.nextVideoViewType == .VideoFilePlayerWithLoop {

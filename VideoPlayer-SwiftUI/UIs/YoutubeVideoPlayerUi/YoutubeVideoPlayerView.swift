@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct YoutubeVideoPlayerView: View {
+    var youtubeVideoId: String
     var body: some View {
-        Text("YoutubeVideoPlayerView")
+        YoutubePlayerWrapper(videoID: youtubeVideoId)
     }
 }
+/* the other library could be used to play the youtube videos https://github.com/SvenTiigi/YouTubePlayerKit */
