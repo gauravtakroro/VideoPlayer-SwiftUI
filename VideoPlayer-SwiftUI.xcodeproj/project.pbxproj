@@ -14,6 +14,9 @@
 		93AB49172B3C928D003E0CE3 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AB49162B3C928D003E0CE3 /* AVKit.framework */; };
 		93AB49232B3C9B63003E0CE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB49222B3C9B63003E0CE3 /* HomeView.swift */; };
 		93AB49252B3C9B70003E0CE3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB49242B3C9B70003E0CE3 /* HomeViewModel.swift */; };
+		93AB49272B3CA2F7003E0CE3 /* VideoFileVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB49262B3CA2F7003E0CE3 /* VideoFileVideoPlayerView.swift */; };
+		93AB49292B3CA309003E0CE3 /* VideoUrlVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB49282B3CA309003E0CE3 /* VideoUrlVideoPlayerView.swift */; };
+		93AB492B2B3CA31E003E0CE3 /* YoutubeVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB492A2B3CA31E003E0CE3 /* YoutubeVideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		93AB49182B3C93BC003E0CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		93AB49222B3C9B63003E0CE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		93AB49242B3C9B70003E0CE3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		93AB49262B3CA2F7003E0CE3 /* VideoFileVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFileVideoPlayerView.swift; sourceTree = "<group>"; };
+		93AB49282B3CA309003E0CE3 /* VideoUrlVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoUrlVideoPlayerView.swift; sourceTree = "<group>"; };
+		93AB492A2B3CA31E003E0CE3 /* YoutubeVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		93AB491D2B3C9A8F003E0CE3 /* VideoFileUi */ = {
 			isa = PBXGroup;
 			children = (
+				93AB49262B3CA2F7003E0CE3 /* VideoFileVideoPlayerView.swift */,
 			);
 			path = VideoFileUi;
 			sourceTree = "<group>";
@@ -116,6 +123,7 @@
 		93AB491E2B3C9ABA003E0CE3 /* VideoUrlUi */ = {
 			isa = PBXGroup;
 			children = (
+				93AB49282B3CA309003E0CE3 /* VideoUrlVideoPlayerView.swift */,
 			);
 			path = VideoUrlUi;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 		93AB491F2B3C9ADD003E0CE3 /* YoutubeVideoUi */ = {
 			isa = PBXGroup;
 			children = (
+				93AB492A2B3CA31E003E0CE3 /* YoutubeVideoPlayerView.swift */,
 			);
 			path = YoutubeVideoUi;
 			sourceTree = "<group>";
@@ -197,10 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AB49272B3CA2F7003E0CE3 /* VideoFileVideoPlayerView.swift in Sources */,
 				93AB49232B3C9B63003E0CE3 /* HomeView.swift in Sources */,
 				93AB490A2B3C9180003E0CE3 /* ContentView.swift in Sources */,
 				93AB49082B3C9180003E0CE3 /* VideoPlayer_SwiftUIApp.swift in Sources */,
 				93AB49252B3C9B70003E0CE3 /* HomeViewModel.swift in Sources */,
+				93AB492B2B3CA31E003E0CE3 /* YoutubeVideoPlayerView.swift in Sources */,
+				93AB49292B3CA309003E0CE3 /* VideoUrlVideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +350,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,6 +381,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

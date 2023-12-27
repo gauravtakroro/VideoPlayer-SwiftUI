@@ -15,6 +15,7 @@ enum VideoViewType: Int {
 
 class HomeViewModel: ObservableObject {
     @Published var showNextVideoView = false
+    var nextVideoViewType: VideoViewType = .VideoFileView
 }
 
 
